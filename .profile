@@ -40,3 +40,9 @@ alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 
 # Composer
 alias composer="php composer.phar"
+
+###############################################################################
+# Extra                                                                       #
+###############################################################################
+
+[[ -s "$HOME/.extra" ]] && source "$HOME/.extra"
