@@ -28,7 +28,7 @@ brew tap homebrew/apache
 brew tap homebrew/php
 
 # Install libraries & SDKs
-brew install allegro5
+brew install homebrew/versions/allegro5
 brew install android-sdk
 brew install android-ndk
 
@@ -43,9 +43,9 @@ brew install postgresql
 ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
 
 # Install web server stuff
-brew install httpd22
-brew install php55
-brew install composer
+brew install homebrew/apache/httpd22
+brew install homebrew/php/php55
+brew install homebrew/php/composer
 
 # Install other stuff
 brew install node
