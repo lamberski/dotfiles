@@ -1,13 +1,13 @@
 # Dotfiles
 
-Collection of configuration files that I use. Based on [http://dotfiles.github.io](http://dotfiles.github.io).
+Collection of configuration files that I use. More info: [http://dotfiles.github.io](http://dotfiles.github.io).
 
 ## Installation
 
 You can clone the repository wherever you want. The `setup.sh` script will pull in the latest version and copy the files to your home folder.
 
 ```bash
-git clone https://github.com/lamberski/dotfiles.git && cd dotfiles && source bootstrap.sh
+git clone https://github.com/lamberski/dotfiles.git && cd dotfiles && source setup.sh
 ```
 
 To update, `cd` into your local `dotfiles` repository and then:
