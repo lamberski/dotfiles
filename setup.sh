@@ -7,16 +7,19 @@ git pull origin master
 # Homebrew                                                                    #
 ###############################################################################
 
-echo "\033[4;33mInstalling Homebrew\033[0m"
-ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+homebrew="$HOME/.homebrew"
 
-echo "\033[4;33mInstalling Homebrew packages\033[0m"
+if [ ! -f "$homebrew/bin/brew" ]
+then
+  echo "\033[4;33mInstalling Homebrew\033[0m"
+  git clone https://github.com/mxcl/homebrew.git $homebrew
+else
+  echo "\033[4;33mUpdating Homebrew and packages\033[0m"
+  brew update
+  brew upgrade
+fi
 
-# Make sure we’re using the latest Homebrew
-brew update
-
-# Upgrade any already-installed formulae
-brew upgrade
+echo "\033[4;33mInstalling Homebrew taps and packages\033[0m"
 
 # Add taps
 brew tap homebrew/versions
@@ -33,9 +36,9 @@ brew install subversion
 
 # Install database systems
 brew install mysql
-ln -sfv /usr/local/opt/mysql/*.plist ~/Library/LaunchAgents
+ln -sfv $homebrew/opt/mysql/*.plist ~/Library/LaunchAgents
 brew install postgresql
-ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
+ln -sfv $homebrew/opt/postgresql/*.plist ~/Library/LaunchAgents
 
 # Install web server stuff
 brew install homebrew/php/php55 --with-intl --with-pgsql
