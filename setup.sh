@@ -7,11 +7,8 @@ git pull origin master
 # Homebrew                                                                    #
 ###############################################################################
 
-if test ! $(which brew)
-then
-  echo "\033[4;33mInstalling Homebrew\033[0m"
-  ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
-fi
+echo "\033[4;33mInstalling Homebrew\033[0m"
+ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 
 echo "\033[4;33mInstalling Homebrew packages\033[0m"
 
@@ -27,7 +24,6 @@ brew tap homebrew/dupes
 brew tap homebrew/php
 
 # Install libraries & SDKs
-brew install homebrew/versions/allegro5
 brew install android-sdk
 brew install android-ndk
 
@@ -42,7 +38,7 @@ brew install postgresql
 ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
 
 # Install web server stuff
-brew install homebrew/php/php55
+brew install homebrew/php/php55 --with-intl --with-pgsql
 brew install homebrew/php/composer
 
 # Install other stuff
