@@ -24,7 +24,6 @@ brew upgrade
 # Add taps
 brew tap homebrew/versions
 brew tap homebrew/dupes
-brew tap homebrew/apache
 brew tap homebrew/php
 
 # Install libraries & SDKs
@@ -43,7 +42,6 @@ brew install postgresql
 ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
 
 # Install web server stuff
-brew install homebrew/apache/httpd22
 brew install homebrew/php/php55
 brew install homebrew/php/composer
 
