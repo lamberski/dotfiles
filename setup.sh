@@ -21,9 +21,12 @@ fi
 
 echo "\033[4;33mInstalling Homebrew taps and packages\033[0m"
 
-# Add taps
+# Re-add taps
+brew untap homebrew/versions
 brew tap homebrew/versions
+brew untap homebrew/dupes
 brew tap homebrew/dupes
+brew untap homebrew/php
 brew tap homebrew/php
 
 # Install libraries & SDKs
@@ -42,6 +45,7 @@ ln -sfv $homebrew/opt/postgresql/*.plist ~/Library/LaunchAgents
 
 # Install web server stuff
 brew install homebrew/php/php55 --with-intl --with-pgsql
+ln -sfv $homebrew/opt/php55/*.plist ~/Library/LaunchAgents
 brew install homebrew/php/composer
 
 # Install other stuff
