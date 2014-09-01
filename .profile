@@ -12,7 +12,7 @@ export PATH="$PATH:$HOME/.rvm/bin"
 # Homebrew                                                                    #
 ###############################################################################
 
-export PATH="$PATH:/usr/local/bin"
+export PATH="/usr/local/bin:$PATH"
 
 ###############################################################################
 # Cocos2d-x                                                                   #
