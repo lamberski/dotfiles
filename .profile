@@ -35,8 +35,9 @@ export PATH="$NDK_ROOT:$PATH"
 alias docklock="defaults write com.apple.dock contents-immutable -bool true;killall Dock"
 alias dockunlock="defaults write com.apple.dock contents-immutable -bool false;killall Dock"
 
-# Open Sublime
+# Other stuff
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+alias t="tree"
 
 ###############################################################################
 # Extra                                                                       #

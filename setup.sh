@@ -52,6 +52,7 @@ brew install homebrew/php/composer
 brew install node
 brew install ant
 brew install ffmpeg
+brew install tree
 
 # Remove outdated versions from the cellar
 brew cleanup
