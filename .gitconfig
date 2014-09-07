@@ -1,4 +1,4 @@
 [alias]
-	s = status
+	s = status -s
 	c = commit -m
 	a = add
