@@ -38,9 +38,6 @@ alias dockunlock="defaults write com.apple.dock contents-immutable -bool false;k
 # Open Sublime
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 
-# Composer
-alias composer="php composer.phar"
-
 ###############################################################################
 # Extra                                                                       #
 ###############################################################################
