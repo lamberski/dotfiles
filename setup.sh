@@ -40,18 +40,18 @@ brew install subversion
 # Install database systems
 brew install mysql
 ln -sfv $homebrew/opt/mysql/*.plist ~/Library/LaunchAgents
-launchctl unload ~/LibraryLaunchAgents/homebrew.mxcl.mysql.plist
-launchctl load ~/LibraryLaunchAgents/homebrew.mxcl.mysql.plist
+launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
+launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
 brew install postgresql
 ln -sfv $homebrew/opt/postgresql/*.plist ~/Library/LaunchAgents
-launchctl unload ~/LibraryLaunchAgents/homebrew.mxcl.postgresql.plist
-launchctl load ~/LibraryLaunchAgents/homebrew.mxcl.postgresql.plist
+launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
+launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 
 # Install web server stuff
 brew install homebrew/php/php55 --with-intl --with-pgsql
 ln -sfv $homebrew/opt/php55/*.plist ~/Library/LaunchAgents
-launchctl unload ~/LibraryLaunchAgents/homebrew.mxcl.php55.plist
-launchctl load ~/LibraryLaunchAgents/homebrew.mxcl.php55.plist
+launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.php55.plist
+launchctl load ~/Library/LaunchAgents/homebrew.mxcl.php55.plist
 brew install homebrew/php/composer
 
 # Install other stuff
