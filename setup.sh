@@ -48,10 +48,10 @@ launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 
 # Install web server stuff
-brew install homebrew/php/php55 --with-intl --with-pgsql
-ln -sfv $homebrew/opt/php55/*.plist ~/Library/LaunchAgents
-launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.php55.plist
-launchctl load ~/Library/LaunchAgents/homebrew.mxcl.php55.plist
+brew install homebrew/php/php56 --with-intl --with-pgsql
+ln -sfv $homebrew/opt/php56/*.plist ~/Library/LaunchAgents
+launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.php56.plist
+launchctl load ~/Library/LaunchAgents/homebrew.mxcl.php56.plist
 brew install homebrew/php/composer
 
 # Install other stuff
