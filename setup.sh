@@ -59,6 +59,8 @@ brew install node
 brew install ant
 brew install ffmpeg
 brew install tree
+brew install imagemagick
+brew install graphicsmagick
 
 # Remove outdated versions from the cellar
 brew cleanup
