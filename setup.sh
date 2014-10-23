@@ -104,6 +104,7 @@ echo "\033[4;33mCopy dotfiles to ~\033[0m"
 rsync --exclude ".git/" \
       --exclude "setup.sh" \
       --exclude "readme.md" \
+      --exclude "npm-debug.log" \
       -avh --no-perms . ~;
 
 source ~/.profile
