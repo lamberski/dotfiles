@@ -93,6 +93,7 @@ echo "\033[4;33mInstalling Node packages\033[0m"
 npm install -g bower
 npm install -g grunt
 npm install -g yo
+npm install -g dploy
 
 echo "\033[4;33mUpdating global Node packages\033[0m"
 npm update -g
