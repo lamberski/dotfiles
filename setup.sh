@@ -81,6 +81,7 @@ gem install bundler
 gem install capistrano
 gem install dandelion
 gem install jekyll
+gem install sass
 
 ###############################################################################
 # Node                                                                        #
