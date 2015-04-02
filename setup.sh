@@ -26,10 +26,6 @@ fi
 
 echo "\033[4;33mInstalling Homebrew packages\033[0m"
 
-# Install libraries & SDKs
-brew install android-sdk
-brew install android-ndk
-
 # Install version control systems
 brew install git
 brew install subversion
@@ -53,7 +49,6 @@ brew install homebrew/php/composer
 
 # Install other stuff
 brew install node
-brew install ant
 brew install ffmpeg
 brew install tree
 brew install imagemagick
