@@ -93,6 +93,7 @@ npm cache clean
 echo "\033[4;33mInstalling Node packages\033[0m"
 npm install -g bower
 npm install -g grunt
+npm install -g gulp
 npm install -g yo
 
 echo "\033[4;33mUpdating global Node packages\033[0m"
