@@ -13,21 +13,18 @@ if [ ! -f "$homebrew/bin/brew" ]
 then
   echo "\033[4;33mInstalling Homebrew\033[0m"
   git clone https://github.com/mxcl/homebrew.git $homebrew
+
+  echo "\033[4;33mInstalling Homebrew taps\033[0m"
+  brew tap homebrew/versions
+  brew tap homebrew/dupes
+  brew tap homebrew/php
 else
   echo "\033[4;33mUpdating Homebrew and packages\033[0m"
   brew update
   brew upgrade
 fi
 
-echo "\033[4;33mInstalling Homebrew taps and packages\033[0m"
-
-# Re-add taps
-brew untap homebrew/versions
-brew tap homebrew/versions
-brew untap homebrew/dupes
-brew tap homebrew/dupes
-brew untap homebrew/php
-brew tap homebrew/php
+echo "\033[4;33mInstalling Homebrew packages\033[0m"
 
 # Install libraries & SDKs
 brew install android-sdk
