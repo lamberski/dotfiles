@@ -21,19 +21,6 @@ export PATH="$PATH:$HOME/.rvm/bin"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 ###############################################################################
-# Cocos2d-x                                                                   #
-###############################################################################
-
-export COCOS_CONSOLE_ROOT="/Users/lamberski/Projects/Robbie/Boat/cocos2d/tools/cocos2d-console/bin"
-export PATH="$COCOS_CONSOLE_ROOT:$PATH"
-
-export ANDROID_SDK_ROOT="$(brew  --prefix)/opt/android-sdk"
-export PATH="$ANDROID_SDK_ROOT:$PATH"
-
-export NDK_ROOT="$(brew  --prefix)/Cellar/android-ndk/r9d"
-export PATH="$NDK_ROOT:$PATH"
-
-###############################################################################
 # Aliases                                                                     #
 ###############################################################################
 
