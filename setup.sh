@@ -71,8 +71,6 @@ rvm use 2.2.1 --default
 echo "\033[4;33mInstalling gems\033[0m"
 gem install bundler
 gem install capistrano
-gem install dandelion
-gem install jekyll
 gem install sass
 
 ###############################################################################
