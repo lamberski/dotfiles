@@ -46,6 +46,7 @@ ln -sfv $homebrew/opt/php56/*.plist ~/Library/LaunchAgents
 launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.php56.plist
 launchctl load ~/Library/LaunchAgents/homebrew.mxcl.php56.plist
 brew install homebrew/php/composer
+brew install homebrew/php/wp-cli
 
 # Install other stuff
 brew install node
