@@ -18,6 +18,7 @@ then
   brew tap homebrew/versions
   brew tap homebrew/dupes
   brew tap homebrew/php
+  brew tap homebrew/services
 else
   echo "\033[4;33mUpdating Homebrew and packages\033[0m"
   brew update
@@ -41,6 +42,8 @@ launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 
 # Install web server stuff
+brew install homebrew/apache/httpd24
+ln -sfv $homebrew/opt/httpd24/*.plist ~/Library/LaunchAgents
 brew install homebrew/php/php56 --with-intl --with-pgsql
 ln -sfv $homebrew/opt/php56/*.plist ~/Library/LaunchAgents
 launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.php56.plist
