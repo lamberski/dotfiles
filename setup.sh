@@ -80,6 +80,7 @@ echo "\033[4;33mInstalling gems\033[0m"
 gem install bundler
 gem install capistrano
 gem install sass
+gem install dandelion
 
 ###############################################################################
 # Node                                                                        #
