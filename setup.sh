@@ -44,21 +44,19 @@ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 # Install web server stuff
 brew install homebrew/apache/httpd24
 ln -sfv $homebrew/opt/httpd24/*.plist ~/Library/LaunchAgents
-brew install php56 --with-homebrew-libressl --with-homebrew-libxml2 --with-intl --with-pgsql
-ln -sfv $homebrew/opt/php56/*.plist ~/Library/LaunchAgents
-launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.php56.plist
-launchctl load ~/Library/LaunchAgents/homebrew.mxcl.php56.plist
-brew install homebrew/php/php56-mcrypt
-brew install homebrew/php/php56-opcache
-brew install homebrew/php/php56-imagick
+brew install php70 --with-homebrew-libressl --with-homebrew-libxml2 --with-intl --with-pgsql
+ln -sfv $homebrew/opt/php70/*.plist ~/Library/LaunchAgents
+launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.php70.plist
+launchctl load ~/Library/LaunchAgents/homebrew.mxcl.php70.plist
+brew install homebrew/php/php70-mcrypt
+brew install homebrew/php/php70-opcache
+brew install homebrew/php/php70-imagick
 brew install homebrew/php/composer
 brew install homebrew/php/wp-cli
 brew install homebrew/php/drush
 
 # Install other stuff
 brew install node
-brew install ffmpeg
-brew install tree
 brew install imagemagick
 brew install graphicsmagick
 
@@ -73,14 +71,12 @@ echo "\033[4;33mInstalling RVM\033[0m"
 curl -L https://get.rvm.io | bash
 
 echo "\033[4;33mInstalling Ruby with RVM\033[0m"
-rvm install 2.2.3
-rvm use 2.2.3 --default
+rvm install ruby --latest
 
 echo "\033[4;33mInstalling gems\033[0m"
 gem install bundler
 gem install capistrano
 gem install sass
-gem install dandelion
 
 ###############################################################################
 # Node                                                                        #
