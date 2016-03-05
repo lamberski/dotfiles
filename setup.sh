@@ -53,7 +53,6 @@ brew install homebrew/php/php70-opcache
 brew install homebrew/php/php70-imagick
 brew install homebrew/php/composer
 brew install homebrew/php/wp-cli
-brew install homebrew/php/drush
 
 # Install other stuff
 brew install node
