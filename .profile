@@ -32,6 +32,17 @@ alias dockunlock="defaults write com.apple.dock contents-immutable -bool false;k
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 alias t="tree"
 
+function code {
+  if [[ $# = 0 ]]
+  then
+    open -a "Visual Studio Code"
+  else
+    local argPath="$1"
+    [[ $1 = /* ]] && argPath="$1" || argPath="$PWD/${1#./}"
+    open -a "Visual Studio Code" "$argPath"
+  fi
+}
+
 ###############################################################################
 # Extra                                                                       #
 ###############################################################################
