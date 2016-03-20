@@ -44,7 +44,7 @@ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 # Install web server stuff
 brew install homebrew/apache/httpd24
 ln -sfv $homebrew/opt/httpd24/*.plist ~/Library/LaunchAgents
-brew install php70 --with-homebrew-libressl --with-homebrew-libxml2 --with-intl --with-pgsql --with-pear
+brew install php70 --with-homebrew-libressl --with-homebrew-libxml2 --with-intl --with-postgresql --with-pear
 ln -sfv $homebrew/opt/php70/*.plist ~/Library/LaunchAgents
 launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.php70.plist
 launchctl load ~/Library/LaunchAgents/homebrew.mxcl.php70.plist
