@@ -83,6 +83,7 @@ rvm install ruby --latest
 
 echo "\033[4;33mInstalling gems\033[0m"
 gem install bundler
+gem install rubocop
 
 ###############################################################################
 # Node                                                                        #
