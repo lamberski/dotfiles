@@ -69,6 +69,7 @@ brew cleanup
 
 composer global require "phpmd/phpmd=*"
 composer global require "squizlabs/php_codesniffer=*"
+composer global require "deployer/deployer=*"
 
 ###############################################################################
 # RVM                                                                         #
