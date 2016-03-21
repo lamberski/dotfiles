@@ -98,6 +98,8 @@ npm install -g grunt-cli
 npm install -g gulp
 npm install -g yo
 npm install -g generator-xh
+npm install -g sass-lint
+npm install -g jshint
 
 echo "\033[4;33mUpdating global Node packages\033[0m"
 npm update -g
