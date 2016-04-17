@@ -44,6 +44,9 @@ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 # Install web server stuff
 brew install homebrew/php/composer
 brew install homebrew/php/wp-cli
+brew cask install virtualbox
+brew cask install vagrant
+brew cask install vagrant-manager
 
 # Install other stuff
 brew install node
