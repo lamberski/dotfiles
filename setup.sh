@@ -42,6 +42,7 @@ launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 
 # Install web server stuff
+brew install homebrew/php/php70
 brew install homebrew/php/composer
 brew install homebrew/php/wp-cli
 brew cask install virtualbox
