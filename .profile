@@ -11,16 +11,6 @@ export PATH="$HOME/.homebrew/bin:$PATH"
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 
 ###############################################################################
-# RVM                                                                         #
-###############################################################################
-
-# Add RVM to PATH for scripting
-export PATH="$PATH:$HOME/.rvm/bin"
-
-# Load RVM into a shell session as a function
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-
-###############################################################################
 # Aliases                                                                     #
 ###############################################################################
 
@@ -30,7 +20,6 @@ alias dockunlock="defaults write com.apple.dock contents-immutable -bool false;k
 
 # Other stuff
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
-alias t="tree"
 
 function code {
   if [[ $# = 0 ]]
