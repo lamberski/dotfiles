@@ -13,12 +13,6 @@ if [ ! -f "$homebrew/bin/brew" ]
 then
   echo "\033[4;33mInstalling Homebrew\033[0m"
   git clone https://github.com/mxcl/homebrew.git $homebrew
-
-  echo "\033[4;33mInstalling Homebrew taps\033[0m"
-  brew tap homebrew/versions
-  brew tap homebrew/dupes
-  brew tap homebrew/php
-  brew tap homebrew/services
 else
   echo "\033[4;33mUpdating Homebrew and packages\033[0m"
   brew update
@@ -30,10 +24,7 @@ echo "\033[4;33mInstalling Homebrew packages\033[0m"
 # Install version control systems
 brew install git
 brew install subversion
-brew install php70
-brew install composer
-
-# Install other stuff
+brew install homebrew/php/php70
 brew install node
 
 # Remove outdated versions from the cellar
@@ -46,7 +37,6 @@ brew cleanup
 composer global require "phpmd/phpmd"
 composer global require "squizlabs/php_codesniffer"
 composer global require "deployer/deployer"
-composer global require "laravel/installer"
 composer global require "laravel/homestead"
 composer global require "wp-cli/wp-cli"
 
