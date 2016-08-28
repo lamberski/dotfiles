@@ -39,6 +39,7 @@ composer global require "squizlabs/php_codesniffer"
 composer global require "deployer/deployer"
 composer global require "laravel/homestead"
 composer global require "wp-cli/wp-cli"
+composer global require "phpunit/phpunit"
 
 ###############################################################################
 # Node
