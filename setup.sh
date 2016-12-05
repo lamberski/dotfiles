@@ -24,7 +24,7 @@ echo "\033[4;33mInstalling Homebrew packages\033[0m"
 # Install version control systems
 brew install git
 brew install subversion
-brew install homebrew/php/php70
+brew install homebrew/php/php71
 brew install node
 
 # Remove outdated versions from the cellar
@@ -38,7 +38,6 @@ composer global require "phpmd/phpmd"
 composer global require "squizlabs/php_codesniffer"
 composer global require "deployer/deployer"
 composer global require "laravel/homestead"
-composer global require "wp-cli/wp-cli"
 composer global require "phpunit/phpunit"
 
 ###############################################################################
@@ -49,12 +48,7 @@ echo "\033[4;33mClean NPM cache\033[0m"
 npm cache clean
 
 echo "\033[4;33mInstalling Node packages\033[0m"
-npm install -g bower
-npm install -g grunt
-npm install -g grunt-cli
 npm install -g gulp
-npm install -g yo
-npm install -g generator-xh
 npm install -g sass-lint
 npm install -g jshint
 npm install -g vue-cli
