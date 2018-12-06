@@ -1,14 +1,11 @@
 ###############################################################################
-# Homebrew                                                                    #
+# Paths                                                                       #
 ###############################################################################
 
 export PATH="$HOME/.homebrew/bin:$PATH"
-
-###############################################################################
-# Composer                                                                    #
-###############################################################################
-
 export PATH="$HOME/.composer/vendor/bin:$PATH"
+export ANDROID_HOME=/usr/local/share/android-sdk
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 
 ###############################################################################
 # Aliases                                                                     #
@@ -17,6 +14,10 @@ export PATH="$HOME/.composer/vendor/bin:$PATH"
 # Unlock/lock OS X Dock
 alias docklock="defaults write com.apple.dock contents-immutable -bool true;killall Dock"
 alias dockunlock="defaults write com.apple.dock contents-immutable -bool false;killall Dock"
+
+# Dotfiles controls
+alias dotinstall="source ~/Documents/Dotfiles/install.sh"
+alias dotupdate="source ~/Documents/Dotfiles/update.sh"
 
 # Other stuff
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
@@ -37,9 +38,3 @@ function code {
 ###############################################################################
 
 [[ -s "$HOME/.extra" ]] && source "$HOME/.extra"
-
-###############################################################################
-# Initial Commands                                                            #
-###############################################################################
-
-cd "$HOME/Projects"
