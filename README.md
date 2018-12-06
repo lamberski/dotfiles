@@ -10,10 +10,16 @@ You can clone the repository wherever you want. The `setup.sh` script will pull 
 git clone https://github.com/lamberski/dotfiles.git && cd dotfiles && source setup.sh
 ```
 
+To install everything, `cd` into your local `dotfiles` repository and then:
+
+```bash
+source install.sh
+```
+
 To update, `cd` into your local `dotfiles` repository and then:
 
 ```bash
-source setup.sh
+source update.sh
 ```
 
 ### Add custom commands without creating a new fork
